@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Atlas</title>
+<style>
+  :root { --teal:#1f6f6b; --ink:#182024; }
+  * { box-sizing:border-box; }
+  body { margin:0; font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+         color:var(--ink); background:#f7f9fa; }
+  header { background:var(--teal); color:#fff; padding:44px 24px; }
+  main, footer { max-width:760px; margin:0 auto; padding:0 24px; }
+  header .wrap { max-width:760px; margin:0 auto; }
+  h1 { margin:0; font-size:1.75rem; letter-spacing:-.01em; }
+  h2 { margin:36px 0 8px; font-size:1.14rem; }
+  ul { padding-left:20px; }
+  li { margin:6px 0; }
+  table { border-collapse:collapse; width:100%; margin:12px 0; font-size:.94rem; }
+  th, td { border:1px solid #d5dee2; padding:8px 10px; text-align:left; vertical-align:top; }
+  th { background:#eef3f5; }
+  a { color:var(--teal); }
+  .updated { opacity:.9; margin:6px 0 0; }
+  footer { margin:48px auto 64px; font-size:.88rem; color:#5c6b73; }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <h1>Privacy Policy</h1>
+    <p class="updated">Applies to the Atlas personal assistant application. Last updated: September 2026.</p>
+  </div>
+</header>
+
+<main>
+  <p>
+    Atlas is a private, single-user application running on a personal server. This policy explains how the
+    application accesses, uses, stores and shares data obtained from Google APIs — and, just as importantly,
+    what it does not do with it.
+  </p>
+
+  <h2>1. Whose data this covers</h2>
+  <p>
+    Atlas serves exactly one person: the owner and operator of the server it runs on, who is also the sole
+    holder of the Google Account it is authorised against. There are no other users, no accounts to create,
+    and no third parties whose data Atlas touches.
+  </p>
+
+  <h2>2. What Atlas accesses, and why</h2>
+  <table>
+    <tr><th>Google service</th><th>Scope of access</th><th>Why</th></tr>
+    <tr>
+      <td>Gmail</td>
+      <td>Read, modify (labels / read state), and send</td>
+      <td>To search and summarise the operator's mail, flag messages, and send replies or new messages that the
+          operator has explicitly reviewed and approved.</td>
+    </tr>
+    <tr>
+      <td>Google Calendar</td>
+      <td>Read and write events</td>
+      <td>To show upcoming events, detect scheduling conflicts, prepare meeting briefings, and create events at
+          the operator's request.</td>
+    </tr>
+    <tr>
+      <td>Google Drive</td>
+      <td>Read and write files</td>
+      <td>To store and organise notes, drafts and exports in the operator's own Drive, in a folder called
+          <em>Atlas Hub</em>.</td>
+    </tr>
+    <tr>
+      <td>Google Docs &amp; Sheets</td>
+      <td>Read and write documents and spreadsheets</td>
+      <td>To create and update notes, reports and an index spreadsheet belonging to the operator.</td>
+    </tr>
+    <tr>
+      <td>Google Contacts</td>
+      <td>Read-only</td>
+      <td>To look up a contact's details while drafting correspondence.</td>
+    </tr>
+  </table>
+  <p>
+    Atlas requests access only to the categories above and uses each one solely for the functions described.
+    It does not request or store other Google data.
+  </p>
+
+  <h2>3. Where the data lives</h2>
+  <p>
+    Data obtained through the Google APIs is processed and stored on the operator's own private server. OAuth
+    credentials (a refresh token) are held in a protected file readable only by the application's own service
+    account, alongside a client secret that is never transmitted to third parties. The server's backups are
+    encrypted before leaving the machine, and no unencrypted copy is placed on any third-party storage service.
+  </p>
+
+  <h2>4. No sharing, no sale, no advertising use</h2>
+  <ul>
+    <li>Google user data is never sold, rented, or transferred to anyone.</li>
+    <li>It is never used for advertising, profiling, creditworthiness, lending, or insurance decisions.</li>
+    <li>It is not used to train, fine-tune, or otherwise improve any general-purpose AI model.</li>
+    <li>No human other than the operator reads it, because there is no other person involved in running Atlas.</li>
+    <li>Sub-processors that may see it in transit are limited to the model provider that generates the text
+        replies, and only for the single request being answered. No data is retained by them for Atlas.</li>
+  </ul>
+
+  <h2>5. Google API Services User Data Policy — Limited Use</h2>
+  <p>
+    Atlas's use of information received from Google APIs adheres to the
+    <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data
+    Policy</a>, including the <strong>Limited Use</strong> requirements. In particular, Google user data is used
+    only to provide the features described in section 2, is not transferred to others except as necessary to
+    provide or improve those features, and is not used for advertising.
+  </p>
+
+  <h2>6. Retention and deletion</h2>
+  <p>
+    Information is kept only as long as it is useful to the operator, who can delete it at any time. Access can
+    be revoked at any moment, either from the application (which discards the stored token) or from the Google
+    Account's
+    <a href="https://myaccount.google.com/permissions">third-party access settings</a>. Once access is revoked,
+    Atlas can no longer reach the account, and any cached copies on the server can be deleted on request.
+    To request deletion of anything held, write to the address below.
+  </p>
+
+  <h2>7. Security</h2>
+  <p>
+    Credentials are stored with restrictive file permissions on a private server, are excluded from version
+    control, and are stored encrypted in off-site backups. Transport to and from Google APIs is over TLS.
+  </p>
+
+  <h2>8. Changes to this policy</h2>
+  <p>
+    If the data Atlas accesses changes, this page will be updated to describe the new access before it is used.
+  </p>
+
+  <h2>9. Contact</h2>
+  <p>
+    Privacy questions or deletion requests:
+    <a href="mailto:atlas11111991@gmail.com">atlas11111991@gmail.com</a>
+  </p>
+</main>
+
+<footer>
+  Atlas is a personal, single-user project and not a commercial service. This policy is published so that the
+  application's data practices are publicly documented and verifiable.
+</footer>
+</body>
+</html>
